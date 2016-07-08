@@ -103,6 +103,16 @@ add_action( 'widgets_init', 'robw_photos_widgets_init' );
  */
 function robw_photos_scripts() {
 	wp_enqueue_style( 'robw_photos-style', get_stylesheet_uri() );
+        
+        //Adding Bootstrap
+        wp_enqueue_style( 'bootstrap', get_template_directory_uri() .'/css/bootstrap.css',array(),'3.3.6' );
+        
+        if( !is_admin()){
+            wp_deregister_script( 'jquery' );
+            wp_register_script('jquery', get_template_directory_uri().'/js/jquery-3.0.0.js', false,'3.0.0',true);
+            wp_enqueue_script('jquery');
+        }
+        wp_enqueue_script( 'bootstrap-min-js', get_template_directory_uri() . '/js/bootstrap.js', array(), '3.3.6', true );
 
 	wp_enqueue_script( 'robw_photos-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
