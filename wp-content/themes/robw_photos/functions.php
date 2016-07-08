@@ -103,7 +103,7 @@ add_action( 'widgets_init', 'robw_photos_widgets_init' );
  */
 function robw_photos_scripts() {
         //Adding Bootstrap
-        wp_enqueue_style( 'bootstrap', get_template_directory_uri() .'/css/bootstrap.css',array(),'3.3.6' );
+        wp_enqueue_style( 'bootstrap', get_template_directory_uri() .'/css/bootstrap.css', array(),'3.3.6' );
         
         if( !is_admin()){
             wp_deregister_script( 'jquery' );
