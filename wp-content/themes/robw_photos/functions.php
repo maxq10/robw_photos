@@ -102,8 +102,9 @@ add_action( 'widgets_init', 'robw_photos_widgets_init' );
  * Enqueue scripts and styles.
  */
 function robw_photos_scripts() {
+    
         //Adding Bootstrap
-        wp_enqueue_style( 'bootstrap', get_template_directory_uri() .'/css/bootstrap.css', array(),'3.3.6' );
+        wp_enqueue_style( 'custom-bootstrap', get_template_directory_uri() .'/css/custom.css', array(),'3.3.6' );
         
         if( !is_admin()){
             wp_deregister_script( 'jquery' );
@@ -111,11 +112,11 @@ function robw_photos_scripts() {
             wp_enqueue_script('jquery');
         }
         wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array(), '3.3.6', true);
-    
-	wp_enqueue_style( 'robw_photos-style', get_stylesheet_uri() );
         
         //Adding Google Fonts (Raleway and Open Sans)
         wp_enqueue_style ('robw_photos-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,700' );
+        
+        wp_enqueue_style( 'robw_photos-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'robw_photos-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
