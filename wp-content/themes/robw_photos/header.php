@@ -21,6 +21,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+<section class="header">
+<div class="container">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'robw_photos' ); ?></a>
 
@@ -46,5 +48,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+</div><!-- .container -->
+</section>
 
 	<div id="content" class="site-content">

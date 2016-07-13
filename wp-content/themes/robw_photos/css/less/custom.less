@@ -13,6 +13,7 @@ and open the template in the editor.
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Includes
+# Header
 
 --------------------------------------------------------------*/
 
@@ -27,3 +28,28 @@ and open the template in the editor.
 @import "alerts.less";
 @import "utilities.less";
 @import "jumbotron.less";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+section.header {
+    .make-row();
+    background-color: @soft-green;
+    margin-right: 0;
+    
+    .site-header {
+        .make-md-column(12);
+        color: @soft-beige;
+        
+        a:link {
+            color: @soft-beige;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: @soft-red;
+            text-decoration: underline;
+        }
+    }
+    
+}
