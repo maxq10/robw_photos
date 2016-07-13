@@ -1,3 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 10, 2016, 7:35:02 PM
+    Author     : cswolf
+    Notes      : Created for the purpose of adding custom styles to this theme that Bootstrap cannot handle, and to not modify style.css
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Includes
+# Header
+
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Includes
+--------------------------------------------------------------*/
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6459,7 +6479,9 @@ button.close {
 .modal-header:before,
 .modal-header:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+section.header:before,
+section.header:after {
   content: " ";
   display: table;
 }
@@ -6478,7 +6500,8 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-header:after,
-.modal-footer:after {
+.modal-footer:after,
+section.header:after {
   clear: both;
 }
 .center-block {
@@ -6723,4 +6746,30 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+section.header {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #7ba3a8;
+  margin-right: 0;
+}
+section.header .site-header {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #f4f3de;
+}
+@media (min-width: 992px) {
+  section.header .site-header {
+    float: left;
+    width: 100%;
+  }
+}
+section.header .site-header a:visited {
+  color: #f35a4a;
+  text-decoration: none;
 }
