@@ -22,15 +22,16 @@
  */
 function robw_photos_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'robw_photos_custom_header_args', array(
-		'default-image'          => '',
+		'default-image'          => get_template_directory_uri() . '/robw-logo.png',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
+		'width'                  => 300,
+		'height'                 => 135,
+		'flex-height'            => false,
 		'wp-head-callback'       => 'robw_photos_header_style',
 	) ) );
 }
 add_action( 'after_setup_theme', 'robw_photos_custom_header_setup' );
+
 
 if ( ! function_exists( 'robw_photos_header_style' ) ) :
 /**

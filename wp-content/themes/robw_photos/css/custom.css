@@ -6761,11 +6761,17 @@ section.header .site-header {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #f4f3de;
 }
 @media (min-width: 992px) {
   section.header .site-header {
     float: left;
     width: 100%;
   }
+}
+section.header .site-header .title {
+  font-family: 'Sacramento', sans-serif;
+  font-size: 3em;
+}
+section.header .site-header .title span {
+  font-size: 2em;
 }

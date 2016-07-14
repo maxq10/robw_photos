@@ -114,7 +114,7 @@ function robw_photos_scripts() {
         wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array(), '3.3.6', true);
         
         //Adding Google Fonts (Raleway and Open Sans)
-        wp_enqueue_style ('robw_photos-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,700' );
+        wp_enqueue_style ('robw_photos-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,700|Sacramento' );
         
         wp_enqueue_style( 'robw_photos-style', get_stylesheet_uri() );
 
