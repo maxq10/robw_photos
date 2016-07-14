@@ -6768,10 +6768,46 @@ section.header .site-header {
     width: 100%;
   }
 }
+section.header .site-header article.robw-title {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  section.header .site-header article.robw-title {
+    float: left;
+    width: 50%;
+  }
+}
+section.header .site-header p {
+  margin-bottom: 0;
+}
 section.header .site-header .title {
   font-family: 'Sacramento', sans-serif;
   font-size: 3em;
+  font-weight: 400;
+  color: #777777;
+}
+section.header .site-header .title a:link,
+section.header .site-header .title a:visited,
+section.header .site-header .title a:hover {
+  color: #777777;
+  text-decoration: none;
 }
 section.header .site-header .title span {
   font-size: 2em;
+}
+section.header .site-header article.robw-nav {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  vertical-align: middle;
+}
+@media (min-width: 992px) {
+  section.header .site-header article.robw-nav {
+    float: left;
+    width: 50%;
+  }
 }

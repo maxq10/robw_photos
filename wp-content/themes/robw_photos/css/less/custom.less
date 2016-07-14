@@ -40,9 +40,24 @@ section.header {
     .site-header {
         .make-md-column(12);
         
+        article.robw-title {
+            .make-md-column(6);
+        }
+        
+        p {
+                margin-bottom: 0;
+            }
+        
         .title {
             font-family: 'Sacramento', sans-serif;
             font-size: 3em;
+            font-weight: 400;
+            color: @gray-light;
+            
+            a:link, a:visited, a:hover {
+                color: @gray-light;
+                text-decoration: none;
+            }
             
             span {
                 font-size: 2em;
@@ -50,6 +65,10 @@ section.header {
             }
         }
        
+        article.robw-nav {
+            .make-md-column(6);
+            vertical-align: middle;
+        }
     }
     
 }
